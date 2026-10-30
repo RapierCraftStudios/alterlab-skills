@@ -1,0 +1,24 @@
+{
+  "name": "alterlab",
+  "owner": {
+    "name": "AlterLab",
+    "url": "https://alterlab.io"
+  },
+  "plugins": [
+    {
+      "name": "alterlab-skills",
+      "source": "./",
+      "strict": false,
+      "description": "AlterLab Agent Skills: scrape, search, crawl, extract and monitor the web. Examples are generated from the canonical SDK snippets; the API key is read from ALTERLAB_API_KEY.",
+      "homepage": "https://alterlab.io/for-ai-agents",
+      "category": "web",
+      "skills": [
+        "./agent-skills/alterlab-scrape",
+        "./agent-skills/alterlab-search",
+        "./agent-skills/alterlab-crawl",
+        "./agent-skills/alterlab-extract",
+        "./agent-skills/alterlab-monitor"
+      ]
+    }
+  ]
+}
