@@ -1,6 +1,6 @@
 ---
 name: alterlab-extract
-description: Extract structured JSON from any web page with AlterLab using a JSON schema. Use when the user wants specific fields (prices, titles, listings, contacts) rather than the full page text.
+description: Extract structured JSON from any web page with AlterLab using a JSON schema. Use when the user wants specific fields (prices, titles, listings, contacts) rather than the full page text. Works on JavaScript-heavy and protected pages. Do not use it when the full page text is enough (use alterlab-scrape).
 ---
 
 # Extract structured data with AlterLab
@@ -17,6 +17,8 @@ Do not use when:
 ## Authentication
 
 Set your API key in the `ALTERLAB_API_KEY` environment variable. Never paste the key into code, commands, or files you commit. Create a key at https://alterlab.io/dashboard.
+
+No key yet? `POST https://api.alterlab.io/api/v1/agent/trial` returns a free trial key with no signup (50 requests, 24 hours). Every response from a trial key then carries a claim link in the `X-AlterLab-Claim-URL` header, and the trial errors repeat it. Give that link to your human: they sign in or sign up, and the same key becomes theirs and keeps working with no reconfiguration. A free account comes with up to 5,000 free requests.
 
 ```bash
 export ALTERLAB_API_KEY="..."  # set in your shell, not in the repo
