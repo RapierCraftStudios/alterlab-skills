@@ -40,7 +40,7 @@ print(results)
 ### curl
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/search \
+curl -X POST https://api.alterlab.io/api/v1/search \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"query": "web scraping api", "num_results": 10}'
@@ -52,6 +52,6 @@ curl -X POST https://api.alterlab.io/v1/search \
 
 ## Also available over MCP
 
-Hosted MCP tools: `alterlab_search` (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_search`, `alterlab_serp`, `alterlab_keyword_ideas`, `alterlab_ai_visibility` (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json

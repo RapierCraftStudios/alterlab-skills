@@ -29,7 +29,7 @@ export ALTERLAB_API_KEY="..."  # set in your shell, not in the repo
 ### curl (monitor)
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/monitors \
+curl -X POST https://api.alterlab.io/api/v1/monitors \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"name": "Pricing page", "url": "https://example.com/pricing", "check_interval": "0 */6 * * *"}'
@@ -38,7 +38,7 @@ curl -X POST https://api.alterlab.io/v1/monitors \
 ### curl (scheduled scrape)
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/schedules \
+curl -X POST https://api.alterlab.io/api/v1/schedules \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"name": "Daily scrape", "urls": ["https://example.com/pricing"], "cron": "0 6 * * *"}'
@@ -50,6 +50,6 @@ curl -X POST https://api.alterlab.io/v1/schedules \
 
 ## Also available over MCP
 
-Hosted MCP tools: none (REST only: `/v1/monitors`, `/v1/schedules`) (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_monitor`, `alterlab_schedule` (REST: `/api/v1/monitors`, `/api/v1/schedules`) (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json

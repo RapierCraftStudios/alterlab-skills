@@ -51,7 +51,7 @@ console.log(result.content);
 ### curl
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/scrape \
+curl -X POST https://api.alterlab.io/api/v1/scrape \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url": "https://example.com"}'
@@ -60,7 +60,7 @@ curl -X POST https://api.alterlab.io/v1/scrape \
 ### curl (batch of URLs)
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/batch \
+curl -X POST https://api.alterlab.io/api/v1/batch \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"urls": ["https://example.com/a", "https://example.com/b"]}'
@@ -72,6 +72,6 @@ curl -X POST https://api.alterlab.io/v1/batch \
 
 ## Also available over MCP
 
-Hosted MCP tools: `alterlab_scrape`, `alterlab_screenshot`, `alterlab_batch_scrape`, `alterlab_batch`, `alterlab_estimate_cost`, `alterlab_create_account` (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_scrape`, `alterlab_screenshot`, `alterlab_batch_scrape`, `alterlab_batch`, `alterlab_estimate_cost`, `alterlab_create_account`, `alterlab_job`, `alterlab_balance`, `alterlab_workflow_run` (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json

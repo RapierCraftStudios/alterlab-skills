@@ -19,7 +19,7 @@ def main() -> int:
         print("Set ALTERLAB_API_KEY (create a key at https://alterlab.io/dashboard)", file=sys.stderr)
         return 2
     request = urllib.request.Request(
-        "https://api.alterlab.io/v1/monitors",
+        "https://api.alterlab.io/api/v1/monitors",
         data=json.dumps({"name": args.name, "url": args.url, "check_interval": args.interval}).encode(),
         headers={"X-API-Key": api_key, "Content-Type": "application/json"},
         method="POST",

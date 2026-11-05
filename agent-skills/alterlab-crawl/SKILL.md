@@ -54,7 +54,7 @@ console.log(crawl);
 ### curl (crawl)
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/crawl \
+curl -X POST https://api.alterlab.io/api/v1/crawl \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url": "https://docs.example.com", "max_pages": 50}'
@@ -74,7 +74,7 @@ print(site_map)
 ### curl (map)
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/map \
+curl -X POST https://api.alterlab.io/api/v1/map \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url": "https://example.com", "max_pages": 100}'

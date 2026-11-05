@@ -56,7 +56,7 @@ console.log(result.filtered_content);
 ### curl
 
 ```bash
-curl -X POST https://api.alterlab.io/v1/scrape \
+curl -X POST https://api.alterlab.io/api/v1/scrape \
   -H "X-API-Key: $ALTERLAB_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url": "https://example.com", "extraction_schema": {"type": "object", "properties": {"title": {"type": "string"}, "price": {"type": "string"}, "description": {"type": "string"}}}}'
