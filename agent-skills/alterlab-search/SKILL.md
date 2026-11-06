@@ -8,7 +8,9 @@ description: Search the web with AlterLab and get structured results. Use when t
 ## When to use
 
 - You need to find pages or current facts and do not yet have a URL.
-- Follow up the best results with `alterlab-scrape` to read them in full.
+- Over MCP a plain query runs unified search with content: the result list plus each page as concise markdown (only fetched pages are billed). Pass `scrape_results=false` for the list only.
+- Use `alterlab-scrape` to read a result in full.
+- One search is not enough for a hard question: `alterlab_research` runs a budgeted job that reads many sources and returns a cited answer (your own LLM key).
 
 Do not use when:
 
@@ -52,6 +54,6 @@ curl -X POST https://api.alterlab.io/api/v1/search \
 
 ## Also available over MCP
 
-Hosted MCP tools: `alterlab_search`, `alterlab_serp`, `alterlab_keyword_ideas`, `alterlab_ai_visibility` (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_search`, `alterlab_serp`, `alterlab_keyword_ideas`, `alterlab_ai_visibility`, `alterlab_research` (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json
