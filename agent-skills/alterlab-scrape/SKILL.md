@@ -1,6 +1,6 @@
 ---
 name: alterlab-scrape
-description: Use when a normal fetch returns 403/429, a bot-protection challenge page, a CAPTCHA, or an empty JavaScript shell. Fetch any URL as clean markdown, text, HTML or JSON with AlterLab, including JavaScript-heavy and protected pages. Also use when the user asks to read, fetch, download or summarize a web page, take a screenshot, or scrape a list of URLs.
+description: Use when you have one URL and want its content; for an image use alterlab_screenshot, for 2-20 URLs alterlab_batch_scrape, for a whole site alterlab_crawl. Fetch any URL as clean markdown, text, HTML or JSON with AlterLab, including JavaScript-heavy and protected pages. Also use when the user asks to read, fetch, download or summarize a web page, take a screenshot, or scrape a list of URLs.
 ---
 
 # Scrape a web page with AlterLab
