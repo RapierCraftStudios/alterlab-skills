@@ -72,6 +72,6 @@ curl -X POST https://api.alterlab.io/api/v1/batch \
 
 ## Also available over MCP
 
-Hosted MCP tools: `alterlab_scrape`, `alterlab_screenshot`, `alterlab_batch_scrape`, `alterlab_batch`, `alterlab_estimate_cost`, `alterlab_create_account`, `alterlab_job`, `alterlab_balance`, `alterlab_workflow_run` (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_scrape`, `alterlab_screenshot`, `alterlab_batch_scrape`, `alterlab_batch`, `alterlab_estimate_cost`, `alterlab_site_profile`, `alterlab_create_account`, `alterlab_job`, `alterlab_balance`, `alterlab_workflow_run` (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json

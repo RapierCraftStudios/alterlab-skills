@@ -9,6 +9,7 @@ description: Watch a web page for changes with AlterLab monitors and scheduled s
 
 - The user wants ongoing change detection rather than a one-off fetch.
 - A scrape should repeat on a cron schedule.
+- The user wants an alert rule (low credits, failure rates) or an account webhook.
 
 Do not use when:
 
@@ -50,6 +51,6 @@ curl -X POST https://api.alterlab.io/api/v1/schedules \
 
 ## Also available over MCP
 
-Hosted MCP tools: `alterlab_monitor`, `alterlab_schedule` (REST: `/api/v1/monitors`, `/api/v1/schedules`) (server `https://mcp.alterlab.io/mcp`).
+Hosted MCP tools: `alterlab_monitor`, `alterlab_schedule`, `alterlab_alert_rule`, `alterlab_webhook` (REST: `/api/v1/monitors`, `/api/v1/schedules`, `/api/v1/alerts/rules`, `/api/v1/user-webhooks`) (server `https://mcp.alterlab.io/mcp`).
 
 Docs: https://alterlab.io/docs - API spec: https://alterlab.io/openapi.json
